@@ -1,3 +1,4 @@
+// primary dataset used on index.html (cats)
 const catData = {
   "Normal": {
     "Normal cats": [
@@ -980,10 +981,66 @@ const catData = {
     }
   };
 
-    const selectedCats = new Set();
-    const container = document.getElementById("cats-container");
+// placeholder for enemies dataset (fill in later when you add enemy images/ids)
+const enemyData = {
+  // example structure matching catData
+  "Traitless": {
+    "Story Enemies": [
+      { id: 2, name: "Doge", img: "enemies/traitless/Enemy_icon_000.png" },
+      { id: 3, name: "Snache", img: "enemies/traitless/Enemy_icon_001.png" },
+      { id: 4, name: "Those Guys", img: "enemies/traitless/Enemy_icon_002.png" },
+      { id: 5, name: "Hippoe", img: "enemies/traitless/Enemy_icon_003.png" },
+      { id: 7, name: "Jackie Peng", img: "enemies/traitless/Enemy_icon_005.png" },
+      { id: 8, name: "Gory", img: "enemies/traitless/Enemy_icon_006.png" },
+      { id: 9, name: "Baa Baa", img: "enemies/traitless/Enemy_icon_007.png" },
+      { id: 11, name: "Le'boin", img: "enemies/traitless/Enemy_icon_009.png" },
+      { id: 12, name: "Kang Roo", img: "enemies/traitless/Enemy_icon_010.png" },
+      { id: 14, name: "Teacher Bear", img: "enemies/traitless/Enemy_icon_012.png" },
+      { id: 15, name: "Croco", img: "enemies/traitless/Enemy_icon_013.png" },
+      { id: 17, name: "Squire Rel", img: "enemies/traitless/Enemy_icon_015.png" },
+      { id: 23, name: "Ms. Sign", img: "enemies/traitless/Enemy_icon_021.webp" },
+      { id: 33, name: "Master A.", img: "enemies/traitless/Enemy_icon_031.png" },
+      { id: 34, name: "R.Ost", img: "enemies/traitless/Enemy_icon_032.png" },
+      { id: 35, name: "Otta-smack-u", img: "enemies/traitless/Enemy_icon_033.png" },
+      { id: 36, name: "Kory", img: "enemies/traitless/Enemy_icon_034.png" },
+      { id: 37, name: "Camelle", img: "enemies/traitless/Enemy_icon_035.png" },
+      { id: 38, name: "Duche", img: "enemies/traitless/Enemy_icon_036.png" },
+      { id: 41, name: "THE SLOTH", img: "enemies/traitless/Enemy_icon_039.png" },
+      { id: 42, name: "Rain D.", img: "enemies/traitless/Enemy_icon_040.png" },
+      { id: 43, name: "Dagshund", img: "enemies/traitless/Enemy_icon_041.png" },
+      { id: 44, name: "Celeboodle", img: "enemies/traitless/Enemy_icon_042.png" },
+      { id: 45, name: "H. Nah", img: "enemies/traitless/Enemy_icon_043.png" },
+      { id: 46, name: "Dober P.D", img: "enemies/traitless/Enemy_icon_044.png" },
+      { id: 119, name: "Wall Doge", img: "enemies/traitless/Enemy_icon_117.png" },
+      { id: 148, name: "Trolly Blogger", img: "enemies/traitless/Enemy_icon_146.png" },
+      { id: 237, name: "Mr. Mole", img: "enemies/traitless/Enemy_icon_235.png" },
+      { id: 268, name: "Henry", img: "enemies/traitless/Enemy_icon_266.png" },
+      { id: 320, name: "Dolphina", img: "enemies/traitless/Enemy_icon_318.png" },
+      { id: 357, name: "Croakley", img: "enemies/traitless/Enemy_icon_355.png" },
+      { id: 448, name: "Final Boss Giga-God", img: "enemies/traitless/Enemy_icon_446.png" },
+      { id: 540, name: "Bore Jr.", img: "enemies/traitless/Enemy_icon_538.png" },
+      { id: 549, name: "Mr. Mer", img: "enemies/traitless/Enemy_icon_547.png" },
+      { id: 605, name: "Wild Doge", img: "enemies/traitless/Enemy_icon_603.png" },
+      { id: 610, name: "Li'l Doge", img: "enemies/traitless/Enemy_icon_608.png" },
+      { id: 626, name: "Cumulus Gallus", img: "enemies/traitless/Enemy_icon_624.png" },
+      { id: 643, name: "Elephantidae Papaou", img: "enemies/traitless/Enemy_icon_641.webp" },
+      { id: 656, name: "Mega Baa Baa", img: "enemies/traitless/Enemy_icon_654.webp" },
+      { id: 681, name: "Dogenstein", img: "enemies/traitless/Enemy_icon_679.webp" },
+    ],
+    "Event Enemies": [
+      { id: 0, name: "", img: "" },
 
-    for (const [rarity, categories] of Object.entries(catData)) {
+    ],
+  }
+};
+
+// decide which dataset to render based on page filename
+const data = location.pathname.includes('enemies') ? enemyData : catData;
+
+const selectedCats = new Set();
+const container = document.getElementById("cats-container");
+
+for (const [rarity, categories] of Object.entries(data)) {
       const section = document.createElement("div");
       section.className = "rarity-section";
       section.innerHTML = `<h2>${rarity}</h2>`;
@@ -1089,9 +1146,10 @@ const catData = {
 
     function showSelected() {
       const ids = Array.from(selectedCats);
+      const label = location.pathname.includes('enemies') ? 'enemy' : 'cat';
       document.getElementById("output").textContent = ids.length
-        ? `Your cat ids: ${ids.join(' ')}`
-        : "You haven't selected any cats.";
+        ? `Your ${label} ids: ${ids.join(' ')}`
+        : `You haven't selected any ${label}s.`;
   
       // Remove old copy button if exists
   const oldBtn = document.getElementById("copy-ids-btn");

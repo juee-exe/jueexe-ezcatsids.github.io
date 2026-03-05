@@ -534,7 +534,6 @@ const catData = {
             { id: 490, name: "", img: "images/Super Rare/Collaborations/Uni490_c00.png" },
             { id: 491, name: "", img: "images/Super Rare/Collaborations/Uni491_c00.png" },
 
-            { id: 429, name: "", img: "images/Super Rare/Collaborations/Uni429_c00.png" },
             { id: 472, name: "", img: "images/Super Rare/Collaborations/Uni472_s00.webp" },
             { id: 556, name: "", img: "images/Super Rare/Collaborations/Uni556_s00.png" },
             { id: 576, name: "", img: "images/Super Rare/Collaborations/Uni576_c00.png" },
@@ -1407,10 +1406,7 @@ const enemyData = {
       { id: 137, name:"Flying Ninja Cat ", img: "enemies/floating/Cat Counterparts/Enemy_icon_135.png"},
       { id: 235, name:"Nyalladin ", img: "enemies/floating/Cat Counterparts/Enemy_icon_233.png"},
       { id: 253, name:"Kiss and Koi ", img: "enemies/floating/Cat Counterparts/Enemy_icon_251.png"},
-      { id: 183, name:"Corrupted Valkyrie", img: "enemies/floating/Cat Counterparts/Enemy_icon_181.png"},
-      { id: 214, name:"Raging Bahamut Cat", img: "enemies/floating/Cat Counterparts/Enemy_icon_212.png"},
       { id: 407, name:"Mecha-Bun", img: "enemies/floating/Cat Counterparts/Enemy_icon_405.png"},
-      { id: 449, name:"Filibuster Obstructa", img: "enemies/floating/Cat Counterparts/Enemy_icon_447.png"},
       { id: 632, name:"Metafilibuster ", img: "enemies/floating/Cat Counterparts/Enemy_icon_630.png"},
       { id: 679, name:"Sage of Mind Soractes", img: "enemies/floating/Cat Counterparts/Enemy_icon_677.webp"},
 

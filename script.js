@@ -1181,6 +1181,12 @@ const enemyData = {
       { id: 729, name: "Katsumi Orochi ", img: "enemies/traitless/Collaboration Enemies/Enemy_icon_727.webp" },
       { id: 730, name: "Jack Hammer ", img: "enemies/traitless/Collaboration Enemies/Enemy_icon_728.webp" },
       { id: 732, name: "Sonic ", img: "enemies/traitless/Collaboration Enemies/Enemy_icon_730.png" },
+      { id:763, name: "Rui", img: "enemies/traitless/Collaboration Enemies/Enemy_icon_761.png" },
+      { id:764, name: "Enmu", img: "enemies/traitless/Collaboration Enemies/Enemy_icon_762.png" },
+      { id:765, name: "Akaza", img: "enemies/traitless/Collaboration Enemies/Enemy_icon_763.png" },
+      { id:766, name: "Demon Doge", img: "enemies/traitless/Collaboration Enemies/Enemy_icon_764.png" },
+      { id:767, name: "Demon Gory", img: "enemies/traitless/Collaboration Enemies/Enemy_icon_765.png" },
+      { id:768, name: "Demon Teacher Bear", img: "enemies/traitless/Collaboration Enemies/Enemy_icon_766.png" },
 
     ],
 

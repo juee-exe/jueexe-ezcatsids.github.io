@@ -777,7 +777,6 @@ const catData = {
             { id: 441, name: "", img: "images/Uber rare/Festival/Uni441_c00.png" },
             { id: 543, name: "", img: "images/Uber rare/Festival/Uni543_c00.png" },
             { id: 609, name: "", img: "images/Uber rare/Festival/Uni609_c00.png" },
-            { id: 612, name: "", img: "images/Uber rare/Festival/Uni612_c00.png" },
             { id: 657, name: "", img: "images/Uber rare/Festival/Uni657_c00.png" },
             { id: 705, name: "", img: "images/Uber rare/Festival/Uni705_c00.png" },
             { id: 787, name: "", img: "images/Uber rare/Festival/Uni787_c00.webp" },

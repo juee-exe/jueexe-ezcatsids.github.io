@@ -18,6 +18,15 @@
     <!-- แสดงแมวแยกตามระดับ -->
   </div>
 
+  <div class="auto-select-section">
+    <h3>Auto-Select by IDs</h3>
+    <textarea id="idInput" placeholder="Paste or type cat IDs separated by spaces or commas (e.g., 0 1 2 or 10, 20, 30)"></textarea>
+    <div class="button-group">
+      <button onclick="autoSelectFromInput()">Auto-Select IDs</button>
+      <button onclick="clearIdInput()">Clear Input</button>
+    </div>
+  </div>
+
   <button onclick="showSelected()">Grab your cats id</button>
   <button onclick="clearSelected()">Clear Select</button>
 

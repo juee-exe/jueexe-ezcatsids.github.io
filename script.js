@@ -1945,3 +1945,72 @@ function clearSelected() {
   const copyBtn = document.getElementById("copy-ids-btn");
   if (copyBtn) copyBtn.remove();
 }
+
+function autoSelectFromInput() {
+  const inputElement = document.getElementById("idInput");
+  if (!inputElement) {
+    alert("Input field not found");
+    return;
+  }
+  
+  const inputText = inputElement.value.trim();
+  if (!inputText) {
+    alert("Please paste or type some IDs");
+    return;
+  }
+  
+  // Parse the input - split by spaces or commas
+  const rawIds = inputText.split(/[\s,]+/).filter(id => id.length > 0);
+  const idsToSelect = new Set();
+  const invalidIds = [];
+  
+  rawIds.forEach(id => {
+    const numId = parseInt(id, 10);
+    if (!isNaN(numId)) {
+      idsToSelect.add(numId);
+    } else {
+      invalidIds.push(id);
+    }
+  });
+  
+  // Show warning for invalid IDs
+  if (invalidIds.length > 0) {
+    console.warn(`Invalid IDs (not numbers): ${invalidIds.join(", ")}`);
+  }
+  
+  // Get all available cards
+  const allCards = document.querySelectorAll(".cat-card");
+  let selectedCount = 0;
+  let notFoundIds = new Set(idsToSelect);
+  
+  allCards.forEach(card => {
+    const cardId = parseInt(card.dataset.catId, 10);
+    if (idsToSelect.has(cardId)) {
+      // Select this card
+      if (!card.classList.contains("selected")) {
+        card.classList.add("selected");
+        selectedCats.add(cardId);
+        selectedCount++;
+      }
+      notFoundIds.delete(cardId);
+    }
+  });
+  
+  // Show result message
+  let message = `Selected ${selectedCount} cat(s).`;
+  if (notFoundIds.size > 0) {
+    message += ` Not found: ${Array.from(notFoundIds).join(", ")}.`;
+  }
+  alert(message);
+  
+  // Update the display
+  showSelected();
+}
+
+function clearIdInput() {
+  const inputElement = document.getElementById("idInput");
+  if (inputElement) {
+    inputElement.value = "";
+    inputElement.focus();
+  }
+}

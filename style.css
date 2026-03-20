@@ -440,3 +440,179 @@ body {
         width: 80%;
       }
     }
+
+    /* ========== AUTO-SELECT SECTION STYLES ========== */
+
+    .auto-select-section {
+      margin: 20px 0;
+      padding: 25px;
+      background: linear-gradient(135deg, rgba(13, 27, 42, 0.8) 0%, rgba(10, 10, 10, 0.9) 100%);
+      border: 3px solid #00d4ff;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 212, 255, 0.3), inset 0 0 15px rgba(0, 212, 255, 0.05);
+      animation: sectionGlow 3s ease-in-out infinite;
+    }
+
+    @keyframes sectionGlow {
+      0%, 100% {
+        box-shadow: 0 0 20px rgba(0, 212, 255, 0.3), inset 0 0 15px rgba(0, 212, 255, 0.05);
+      }
+      50% {
+        box-shadow: 0 0 30px rgba(0, 212, 255, 0.5), inset 0 0 20px rgba(0, 212, 255, 0.1);
+      }
+    }
+
+    .auto-select-section h3 {
+      margin: 0 0 20px 0;
+      color: #00d4ff;
+      text-shadow: 0 0 10px rgba(0, 212, 255, 0.6), 0 2px 4px rgba(0, 0, 0, 0.9);
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .auto-select-section textarea {
+      width: calc(100% - 30px); /* Account for padding */
+      height: 100px;
+      padding: 15px;
+      background: linear-gradient(135deg, #0f0f1e 0%, #1a1a2e 100%);
+      border: 2px solid #00d4ff;
+      border-radius: 8px;
+      color: #ffffff;
+      font-family: 'Arial', sans-serif;
+      font-size: 14px;
+      line-height: 1.4;
+      resize: vertical;
+      box-shadow: 0 0 15px rgba(0, 212, 255, 0.2), inset 0 0 10px rgba(0, 212, 255, 0.05);
+      transition: 0.3s;
+      outline: none;
+      box-sizing: border-box;
+      margin: 0 auto;
+      display: block;
+    }
+
+    .auto-select-section textarea::placeholder {
+      color: rgba(0, 212, 255, 0.6);
+      font-style: italic;
+      opacity: 1;
+    }
+
+    .auto-select-section textarea:focus {
+      border-color: #00ffff;
+      box-shadow: 0 0 25px rgba(0, 212, 255, 0.6), inset 0 0 15px rgba(0, 212, 255, 0.1);
+      background: linear-gradient(135deg, #0d1b2a 0%, #1a1a3e 100%);
+    }
+
+    .auto-select-section textarea:hover {
+      border-color: #00ffff;
+      box-shadow: 0 0 20px rgba(0, 212, 255, 0.4), inset 0 0 12px rgba(0, 212, 255, 0.08);
+    }
+
+    .auto-select-section textarea::placeholder {
+      color: rgba(0, 212, 255, 0.5);
+      font-style: italic;
+    }
+
+    .auto-select-section textarea:focus {
+      border-color: #00ffff;
+      box-shadow: 0 0 25px rgba(0, 212, 255, 0.6), inset 0 0 15px rgba(0, 212, 255, 0.1);
+      background: linear-gradient(135deg, #0d1b2a 0%, #1a1a3e 100%);
+    }
+
+    .auto-select-section .button-group {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 15px;
+    }
+
+    .auto-select-section button {
+      padding: 12px 25px;
+      font-size: 14px;
+      font-weight: bold;
+      background: linear-gradient(135deg, #0a0a0a 0%, #0066cc 100%);
+      color: #00d4ff;
+      border: 2px solid #00d4ff;
+      border-radius: 6px;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      box-shadow: 0 0 15px rgba(0, 212, 255, 0.3), inset 0 0 8px rgba(0, 212, 255, 0.1);
+      transition: 0.3s;
+      min-width: 140px;
+    }
+
+    .auto-select-section button:hover {
+      background: linear-gradient(135deg, #0066cc 0%, #00d4ff 100%);
+      box-shadow: 0 0 25px rgba(0, 212, 255, 0.6), inset 0 0 12px rgba(0, 212, 255, 0.2);
+      transform: translateY(-2px);
+      color: #000;
+    }
+
+    .auto-select-section button:active {
+      transform: translateY(0px);
+      box-shadow: 0 0 15px rgba(0, 212, 255, 0.4);
+    }
+
+    /* ========== RESPONSIVE AUTO-SELECT ========== */
+
+    @media (max-width: 767px) {
+      .auto-select-section {
+        margin: 15px 0;
+        padding: 20px;
+      }
+
+      .auto-select-section h3 {
+        font-size: 18px;
+        margin-bottom: 15px;
+      }
+
+      .auto-select-section textarea {
+        height: 80px;
+        padding: 12px;
+        font-size: 13px;
+      }
+
+      .auto-select-section .button-group {
+        gap: 10px;
+        margin-top: 12px;
+      }
+
+      .auto-select-section button {
+        padding: 10px 20px;
+        font-size: 13px;
+        min-width: 120px;
+      }
+    }
+
+    @media (max-width: 479px) {
+      .auto-select-section {
+        margin: 12px 0;
+        padding: 15px;
+      }
+
+      .auto-select-section h3 {
+        font-size: 16px;
+        margin-bottom: 12px;
+      }
+
+      .auto-select-section textarea {
+        height: 70px;
+        padding: 10px;
+        font-size: 12px;
+      }
+
+      .auto-select-section .button-group {
+        gap: 8px;
+        margin-top: 10px;
+      }
+
+      .auto-select-section button {
+        padding: 9px 15px;
+        font-size: 12px;
+        min-width: 100px;
+      }
+    }

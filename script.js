@@ -111,6 +111,7 @@ const catData = {
       { id: 665, name: "Ancient Egg: N201", img: "images/Special/Event_Gacha/Uni665_s00.png" },
       { id: 713, name: "Ancient Egg: N203", img: "images/Special/Event_Gacha/Uni713_s00.webp" },
       { id: 757, name: "Ancient Egg: N205", img: "images/Special/Event_Gacha/Uni757_s00.webp" },
+      { id: 863, name: "The Invisible Cat", img: "images/Special/Event_Gacha/Uni863_c00.png" },
       { id: 342, name: "Maneki Cat", img: "images/Special/Event_Gacha/Uni342_c00.webp" },
       { id: 635, name: "Million-Dollar Cat", img: "images/Special/Event_Gacha/Uni635_c00.png" },
       { id: 689, name: "Meditation Cat", img: "images/Special/Event_Gacha/Uni689_c00.png" },
@@ -590,7 +591,7 @@ const catData = {
             { id: 125, name: "Takeda Shingen", img: "images/Uber rare/Sengoku Wargods Vajiras/Uni125_s00.png" },
             { id: 158, name: "Uesugi Kenshin", img: "images/Uber rare/Sengoku Wargods Vajiras/Uni158_u00.webp" },
             { id: 338, name: "Imagawa Yoshimoto", img: "images/Uber rare/Sengoku Wargods Vajiras/Uni338_s00.png" },
-            { id: 486, name: "Narita Kaihime", img: "images/Uber rare/Sengoku Wargods Vajiras/Uni496_s00.png" },
+            { id: 486, name: "Narita Kaihime", img: "images/Uber rare/Sengoku Wargods Vajiras/Uni496_u00.png" },
             { id: 618, name: "Amakusa Shiro", img: "images/Uber rare/Sengoku Wargods Vajiras/Uni618_s00.png" },
             { id: 649, name: "Hattori Hanzo", img: "images/Uber rare/Sengoku Wargods Vajiras/Uni649_s00.webp" },
             { id: 754, name: "Akechi Mitsuhide", img: "images/Uber rare/Sengoku Wargods Vajiras/Uni754_c00.webp" },
@@ -622,6 +623,7 @@ const catData = {
             { id: 620, name: "Hevijak the Wicked", img: "images/Uber rare/Lords Of Destruction Dragon Emperors/Uni620_s00.webp" },
             { id: 660, name: "Sea Serpent Daliasan", img: "images/Uber rare/Lords Of Destruction Dragon Emperors/Uni660_s00.webp" },
             { id: 760, name: "Gunduros", img: "images/Uber rare/Lords Of Destruction Dragon Emperors/Uni760_c00.webp" },
+            { id: 861, name: "Vornado", img: "images/Uber rare/Lords Of Destruction Dragon Emperors/Uni861_c00.png" },
         ],
         "Acient Heroes Ultra Souls": [
             { id: 134, name: "", img: "images/Uber rare/Acient Heroes Ultra Souls/Uni134_s00.png" },
@@ -852,6 +854,8 @@ const catData = {
             { id: 367, name: "Rider", img: "images/Uber rare/Collaboration/Uni367_c00.webp" },
             { id: 368, name: "Gilgamesh", img: "images/Uber rare/Collaboration/Uni368_c00.webp" },
             { id: 456, name: "Sakura Matou", img: "images/Uber rare/Collaboration/Uni456_s00.png" },
+            { id: 864, name: "Shirou Emiya", img: "images/Uber rare/Collaboration/Uni864_c00.png" },
+            { id: 865, name: "True Assassin", img: "images/Uber rare/Collaboration/Uni865_c00.png" },
 
           //Power Pro Baseball Collaboration Event//
             { id: 393, name: "Saki Nijima", img: "images/Uber rare/Collaboration/Uni393_s00.png" },

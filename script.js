@@ -591,7 +591,7 @@ const catData = {
             { id: 125, name: "Takeda Shingen", img: "images/Uber rare/Sengoku Wargods Vajiras/Uni125_s00.png" },
             { id: 158, name: "Uesugi Kenshin", img: "images/Uber rare/Sengoku Wargods Vajiras/Uni158_u00.webp" },
             { id: 338, name: "Imagawa Yoshimoto", img: "images/Uber rare/Sengoku Wargods Vajiras/Uni338_s00.png" },
-            { id: 486, name: "Narita Kaihime", img: "images/Uber rare/Sengoku Wargods Vajiras/Uni496_u00.png" },
+            { id: 496, name: "Narita Kaihime", img: "images/Uber rare/Sengoku Wargods Vajiras/Uni496_u00.png" },
             { id: 618, name: "Amakusa Shiro", img: "images/Uber rare/Sengoku Wargods Vajiras/Uni618_s00.png" },
             { id: 649, name: "Hattori Hanzo", img: "images/Uber rare/Sengoku Wargods Vajiras/Uni649_s00.webp" },
             { id: 754, name: "Akechi Mitsuhide", img: "images/Uber rare/Sengoku Wargods Vajiras/Uni754_c00.webp" },
